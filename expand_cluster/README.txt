@@ -27,11 +27,9 @@ You must have a valid ESXi license specified with adequate sockets available for
 Ensure that the host to be added to the cluster matches the configuration of the hosts already in the cluster. This ensures a balanced configuration of the cluster.
 
 
-The expand_cluster_spec.json is sample input file.
-
-
+Sample specification file "expand_cluster.json" will be used for expanding cluster operation. So fill the required details and validate before executing the script.
+For more information on the provided sample file, please refer to API reference documentation.
 
 Usage:
     python expand_cluster.py <hostname> <username> <password> <cluster_id>
 
-expand_cluster_spec.json is the sample input file.
