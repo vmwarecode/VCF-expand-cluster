@@ -1,4 +1,29 @@
-Expand a cluster:
+
+INTRODUCTION:
+------------
+
+This module contains script files to expand a cluster.
+
+
+REQUIREMENTS:
+------------
+
+This module requires the following modules:
+
+ * Python 2.7.x
+   Libraries
+ 	* requests
+ 	* sys
+ 	* json
+ 	* time
+
+ * The scripts must be run outside sddc-manager environment.
+
+ * DNS resolution must be done for sddc-manager.
+
+
+PREREQUSITES:
+--------------
 
 The following data is required
 
@@ -27,9 +52,11 @@ You must have a valid ESXi license specified with adequate sockets available for
 Ensure that the host to be added to the cluster matches the configuration of the hosts already in the cluster. This ensures a balanced configuration of the cluster.
 
 
+USAGE:
+-----
+
 Sample specification file "expand_cluster.json" will be used for expanding cluster operation. So fill the required details and validate before executing the script.
 For more information on the provided sample file, please refer to API reference documentation.
 
-Usage:
-    python expand_cluster.py <hostname> <username> <password> <cluster_id>
+Usage:	python expand_cluster.py <hostname> <username> <password> <cluster_id>
 
